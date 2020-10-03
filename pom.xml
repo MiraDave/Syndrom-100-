@@ -53,12 +53,10 @@
                         </goals>
                     </execution>
                     <execution>
-                        <id>verify</id>
+                        <id>check</id>
                         <phase>verify</phase>
                         <goals>
-                            <goal>
-                                check
-                            </goal>
+                            <goal>check</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -67,7 +65,7 @@
                         <rule>
                             <element>CLASS</element>
                             <excludes>
-                                <exclude>Test</exclude>
+                                <exclude>*Test</exclude>
                             </excludes>
                             <limits>
                                 <limit>
